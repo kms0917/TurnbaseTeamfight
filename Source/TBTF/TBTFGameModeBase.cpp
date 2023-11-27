@@ -4,6 +4,7 @@
 #include "TBTFGameModeBase.h"
 #include "TBTFPlayerController.h"
 #include "TBTFDefaultPawn.h"
+#include "Dice.h"
 
 
 ATBTFGameModeBase::ATBTFGameModeBase()
@@ -16,4 +17,8 @@ ATBTFGameModeBase::ATBTFGameModeBase()
 void ATBTFGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
+
+	FVector SpawnLocation = FVector::ZeroVector;
+	FRotator SpawnRotation = FRotator::ZeroRotator;		//call Dice
+	ADice* SpawnedDice = GetWorld()->SpawnActor<ADice>(ADice::StaticClass(), SpawnLocation, SpawnRotation);
 }
