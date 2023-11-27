@@ -11,7 +11,6 @@ ATBTFGameModeBase::ATBTFGameModeBase()
 {
 	PlayerControllerClass = ATBTFPlayerController::StaticClass();
 	DefaultPawnClass = ATBTFDefaultPawn::StaticClass();
-
 }
 
 void ATBTFGameModeBase::BeginPlay()

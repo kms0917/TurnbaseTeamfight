@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Widget/DiceResultWidget.h"
+#include "Widget/DiceResultWidget.h"
 #include "TBTFGameModeBase.generated.h"
 
 /**
