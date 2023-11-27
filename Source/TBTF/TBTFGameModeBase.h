@@ -14,4 +14,7 @@ class TBTF_API ATBTFGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	ATBTFGameModeBase();
+	virtual void BeginPlay() override;
 };
